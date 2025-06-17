@@ -4,7 +4,8 @@
   "main": "file1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon file1.js"
+    "dev1": "nodemon file1.js",
+    "dev2": "nodemon file2.js"
   },
   "keywords": [],
   "author": "",
