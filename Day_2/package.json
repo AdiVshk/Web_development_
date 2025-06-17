@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev1": "nodemon file1.js",
-    "dev2": "nodemon file2.js"
+    "dev2": "nodemon file2.js",
+    "dev4": "nodemon file4.js"
   },
   "keywords": [],
   "author": "",
