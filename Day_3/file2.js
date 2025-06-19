@@ -106,3 +106,18 @@ app.listen(5000);
 //   res.status(200).send(req.body.name);
 // });
 
+
+
+
+
+// app.post('/data', (req, res) => {
+//   let body = req.body;
+//   res.send(JSON.stringify(body));
+// });
+
+// app.get('/data', (req, res) => {
+//   let a = parseInt(req.query.a);
+//   let b = parseInt(req.query.b);
+
+//   res.status(200).send(a * b);
+// });
