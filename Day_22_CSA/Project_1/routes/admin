@@ -1,0 +1,16 @@
+const { Router } = require('express');
+const adminRouter = Router();
+
+adminRouter.post('/SignUp', async function (req, res) {
+  res.status(200).json({ msg: 'Admin SignUp' });
+});
+
+adminRouter.post('/SignIn', async function (req, res) {});
+
+adminRouter.post('/createacourse', async function (req, res) {});
+
+adminRouter.post('/AddcourseContent', async function (req, res) {});
+
+module.exports = {
+  adminRouter: adminRouter,
+};

@@ -1,3 +1,13 @@
+function toggleUI(isLoggedIn) {
+  document.querySelectorAll('.Auth').forEach((element) => {
+    element.style.display = isLoggedIn ? 'none' : 'block';
+  });
+
+  document.getElementById('user-info').style.display = isLoggedIn
+    ? 'block'
+    : 'none';
+}
+
 async function SignUp() {
   await axios.post('http://localhost:4000/SignUp', {
     username: document.getElementById('user-signup').value,
@@ -22,6 +32,7 @@ async function SignIn() {
   // token stored in local storage
   localStorage.setItem('token', response.data.token);
   getInfo();
+  toggleUI(true);
 }
 
 async function getInfo() {
@@ -50,4 +61,5 @@ function Logout() {
   document.getElementById('user-signin-password').value = '';
 
   document.getElementById('User-data').innerHTML = '';
+  toggleUI(false);
 }
